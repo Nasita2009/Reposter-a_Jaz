@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Repostería Jaz</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <header>
+  <nav>
+    <div class="logo-texto">
+      <img src="{{ url_for('static', filename='imagenes/r.jpeg') }}" alt="Repostería Jaz" class="logo" />
+      <span>Repostería Jaz</span>
+    </div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section id="inicio" class="inicio">
+    <h1>Bienvenidos a Repostería Jaz</h1>
+    <p>Jaz donde la frescura y el sabor se unen en cada bocado</p>
+    <img
+      src="https://media.scoolinary.app/blog/images/2021/02/reposteria_casera.jpg"
+      alt="Repostería"
+      class="hero-img"
+    />
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <p>Explora nuestro catálogo.</p>
+    <div class="productos-grid">
+      <div class="card-producto">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" alt="Pastel" />
+        <h3>Pastel</h3>
+        <p>$75.000</p>
+      </div>
+      <div class="card-producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpolClJ2gqZ9f9ajs19vtZtEKHVv_X2zbg8A&s" alt="Pudin" />
+        <h3>Pudin Personalizado</h3>
+        <p>$120.000</p>
+      </div>
+      <div class="card-producto">
+        <img src="https://www.shutterstock.com/image-photo/delicious-row-ice-cream-cones-600nw-2631081797.jpg" alt="Helado en cono" />
+        <h3>Helado en Cono</h3>
+        <p>$3.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio-destacado">
+      <div class="texto">
+        <h3>Catering Personalizado</h3>
+        <p>Ofrecemos mesas de postres y banquetes completos para tus eventos.</p>
+        <a href="#contacto" class="btn-reservar">Reservar Ahora</a>
+      </div>
+      <div class="imagen">
+        <img src="https://www.tomasacostadecorador.com.co/wp-content/uploads/2021/04/Catering-TA.jpg" alt="Catering" />
+      </div>
+    </div>
+    <div class="servicios-grid">
+      <div class="card-servicio">
+        <img src="https://www.tabathapasteleria.com/wp-content/uploads/2022/10/29.png" alt="Fiestas Corporativas" />
+        <h3>Fiestas Corporativas</h3>
+        <p>Postres elegantes para tus reuniones.</p>
+      </div>
+      <div class="card-servicio">
+        <img src="https://tartadequeso.pe/wp-content/uploads/2024/09/mejores-postres-para-catering-de-bodas.jpg" alt="Bodas y Aniversarios" />
+        <h3>Bodas y Aniversarios</h3>
+        <p>Pasteles y postres personalizados para momentos inolvidables.</p>
+      </div>
+      <div class="card-servicio">
+        <img src="https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2023/12/pastel-cumpleanos-Maria-Fortunata.webp?resize=600%2C400&ssl=1" alt="Cumpleaños" />
+        <h3>Cumpleaños</h3>
+        <p>Endulza tu celebración con nuestros pasteles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Blog de Repostería</h2>
+    <div class="blog-grid">
+      <div class="card-blog">
+        <img src="https://proingra.com/wp-content/uploads/2021/11/18-NOV-BRAHMAN-02.jpg" alt="Recetas" />
+        <h3>Recetas irresistibles</h3>
+        <p>Helados de cono caseros, galletas con chips y pasteles de tres leches.</p>
+      </div>
+      <div class="card-blog">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Xlg-liQpttZVR_S1yafR23DDbhEwd1-FyQ&s" alt="Consejos" />
+        <h3>Consejos de Repostería</h3>
+        <p>Aprende a medir ingredientes y mejorar tus habilidades.</p>
+      </div>
+      <div class="card-blog">
+        <img src="https://media.istockphoto.com/id/873169784/es/foto/pastel-de-display.jpg?s=612x612&w=0&k=20&c=uncZd-qRz6SjBGLogulrioqWnjLNQBaFPuaYu1RTPaQ=" alt="Novedades" />
+        <h3>Novedades</h3>
+        <p>Nuevas promociones, línea de helados artesanales y más.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Datos de Contacto</h2>
+    <p>No dudes en comunicarte con nosotros.</p>
+    <p>📍 cll48 #26b-49, san isidro</p>
+    <p>🕑 Lun-Vie 10am-5pm, Sáb 1pm-5pm</p>
+    <p>📞 +57 322 898 4403</p>
+    <p>✉️ reposteriajaz@gmail.com</p>
+
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+      <button type="submit" class="btn-reservar">Enviar</button>
+    </form>
+
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123456789!2d-74.1234567!3d4.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a9b40f0a9d%3A0x123456789abcdef0!2sCll%2048%20%2326b-49%2C%20San%20Isidro%2C%20Colombia!5e0!3m2!1ses!2sus!4v1695600000000!5m2!1ses!2sus"
+  width="100%"
+  height="300"
+  style="border-radius: 12px; margin-top: 20px"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>
+
+  </section>
+
+</body>
+</html>
